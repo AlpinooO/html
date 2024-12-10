@@ -1,7 +1,7 @@
 
 <?php
 
-require_once __DIR__ . '/../controllers/MainController.php';
+require_once __DIR__ . '/controllers/MainControllers.php';
 
 $router = new AltoRouter();
 
@@ -10,10 +10,10 @@ $basePath = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
 $router->setBasePath($basePath);
 
 // Routes
-$router->map('GET', '/', 'MainController#home', 'home');
-$router->map('GET', '/catalogue', 'MainController#catalogue', 'catalogue');
-$router->map('GET', '/detail_catalogue', 'MainController#detail_catalogue', 'detail_catalogue');
-$router->map('GET', '/register', 'MainController#register', 'register');
-$router->map('GET', '/login', 'MainController#login', 'login');
+$router->map('GET', '/', 'MainControllers#home', 'home');
+$router->map('GET', '/catalogue', 'MainControllers#catalogue', 'catalogue');
+$router->map('GET', '/detail_catalogue', 'MainControllers#detail_catalogue', 'detail_catalogue');
+$router->map('GET', '/register', 'MainControllers#register', 'register');
+$router->map('GET', '/login', 'MainControllers#login', 'login');
 // Retourne l'objet router
 return $router;

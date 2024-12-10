@@ -1,0 +1,9 @@
+<footer>
+    <h1>Contact</h1>
+    <h2>Téléphone</h2>
+    <h3>06.00.00.00.00</h3>
+    <h2>Mail</h2>
+    <h3>mail@mail.com</h3>
+    <h2>Adresse</h2>
+    <h3>Adresse</h3>
+</footer>

@@ -1,4 +1,5 @@
 <?php
+
 class MainController{
     public function home(){
         $this->render('home');
